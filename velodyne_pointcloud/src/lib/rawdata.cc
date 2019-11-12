@@ -304,10 +304,10 @@ inline float SQR(float val) { return val*val; }
         union two_bytes tmp;
         tmp.bytes[0] = block.data[k];
         tmp.bytes[1] = block.data[k+1];
-        if (tmp.bytes[0]==0 &&tmp.bytes[1]==0 ) //no laser beam return
-        {
-          continue;
-        }
+        // if (tmp.bytes[0]==0 &&tmp.bytes[1]==0 ) //no laser beam return
+        // {
+        //   continue;
+        // }
 
         /*condition added to avoid calculating points which are not
           in the interesting defined area (min_angle < area < max_angle)*/

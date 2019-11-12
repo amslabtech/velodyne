@@ -37,7 +37,7 @@ PointcloudXYZIRT::PointcloudXYZIRT(
 
   void PointcloudXYZIRT::addPoint(float x, float y, float z, uint16_t ring, uint16_t /*azimuth*/, float distance, float intensity, float time)
   {
-    if(!pointInRange(distance)) return;
+    // if(!pointInRange(distance)) return;
 
     // convert polar coordinates to Euclidean XYZ
 
